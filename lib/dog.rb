@@ -2,7 +2,7 @@ require 'pry'
 class Dog < ActiveRecord::Base
   attr_accessor :name, :breed, :id
 
-  def self.update(name:)
+  def self.update(name)
     binding.pry
   end
 
