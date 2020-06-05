@@ -2,8 +2,8 @@ require 'pry'
 class Dog < ActiveRecord::Base
   attr_accessor :name, :breed, :id
 
-  def update(name:)
-    binding.pry
+  def update(name)
+    self.name = name 
   end
 
   def self.find_or_create_by(name:,breed:)
