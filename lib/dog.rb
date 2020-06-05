@@ -3,7 +3,8 @@ class Dog < ActiveRecord::Base
   attr_accessor :name, :breed, :id
 
   def update(name)
-    self.name = name 
+    self.name = name
+    self 
   end
 
   def self.find_or_create_by(name:,breed:)
